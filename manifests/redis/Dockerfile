@@ -1,4 +1,4 @@
-FROM redis:5.0.4
+FROM redis:5
 # add startup script
 RUN apt-get update && apt-get install -y procps
 COPY ./init_redis.sh /init_redis.sh
